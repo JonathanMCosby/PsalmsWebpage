@@ -1,0 +1,367 @@
+body{
+    margin: 0;
+}
+.menu{
+    cursor: pointer;
+}
+.pageTitle{
+    position: absolute;
+    font-size: 24px;
+    background-color: transparent;
+    text-align: center;
+    inset: 120px 5px auto 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-style: oblique;
+    letter-spacing: 10px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    display: block;
+    height: fit-content;
+    cursor: default;
+}
+.title a{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-style: oblique;
+    font-size: 25px;
+    color: black;
+    text-shadow: 2px 2px 2px rgb(221, 197, 166);
+    letter-spacing: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container{
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+i{
+    font-size: 20px;
+    width: 30px;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0 40px 0;
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+}
+header .icon-cart{
+    position: relative;
+    cursor: pointer;
+}
+header .icon-cart span{
+    width: 25px;
+    display: flex;
+    height: 25px;
+    background-color: rgb(221, 197, 166);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+}
+.listProduct .item{
+    filter: drop-shadow(0 20px 20px black);
+    padding-inline-start: 20px;
+    border-radius: 20px;
+
+}
+.listProduct .item img{
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+    background-color: rgb(240, 240, 240);
+}
+
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    position: absolute;
+    inset: 180px 15px 5px auto;
+    
+}
+.listProduct .item img:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+.listProduct .item h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-size: large;
+    letter-spacing: -2px;
+}
+.listProduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+.listProduct .item button{
+    background-color: rgb(75, 75, 75) ;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+body.showCart .cartTab{
+    inset: 0 0 0 auto;
+    z-index: 3;
+}
+.cartTab{
+    width: 400px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: 0.5s ease-in-out;
+    z-index: 3;
+}
+body.showSubjects .subjectTab{
+    inset: 0 auto 0 0;
+    z-index: 3;
+}
+.subjectTab{
+    width: 400px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    inset: 0 auto 0 -400px;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: 0.5s ease-in-out;
+    z-index: 3;
+}
+.subjectTab h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    margin: 0;
+    padding: 20px;
+}
+.subjectTab button{
+    background-color: rgb(221, 197, 166);
+    font-family: 'Courier New', Courier, monospace;
+    font: 300;
+    color: black;
+    font-size: large;
+    cursor: pointer;
+    border: none;
+}
+.subjectTab button:hover{
+    background-color: white;
+}
+.listOfClothes a.acitve{
+    color: white;
+}
+.listOfClothes{
+    list-style-type: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.listOfClothes a{
+    color: black;
+    text-decoration: none;
+    padding: 50px auto 50px auto;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.listOfClothes a:hover{
+    color: white;
+}
+.listOfClothes li{
+    background-color: rgb(221, 197, 166);
+    margin: 30px auto auto;
+    padding: 40px;
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab .btn button{
+    background-color: rgb(221, 197, 166);
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.cartTab .btn .close{
+    background-color: white;
+}
+.cartTab .listCart .item img{
+    width: 100%;
+}
+.cartTab .listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.cartTab .quantity span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    color: rgb(221, 197, 166);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cartTab .quantity span:nth-child(2){
+    background-color: transparent;
+    color: white;
+}
+.cartTab h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-size: 14px;
+    position: absolute;
+    inset: 58px 115px auto auto;
+    text-decoration: underline;
+}
+.cartTab h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-size: 14px;
+    position: absolute;
+    inset: 55px 40px auto auto;
+    text-decoration: underline;
+}
+.listcart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+/* .clothesTab{
+    width: 75vw;
+    height: 40vw;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: relative;
+    inset: 50px auto auto 200px;
+    display: block;
+    transition: 0.5s ease;
+    overflow: scroll;
+
+}
+body.showClothes .clothesTab{
+    display: block;
+}
+.clothesTab img{
+    position: absolute;
+    inset: 60px 30px auto auto;
+    height: 30vw;
+    width: 30vw;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.clothesTab i{
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: red;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    padding: 2px 2px 2px 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    inset: -5px 5px auto auto;
+}
+.clothesTab button{
+    position: absolute;
+    left: 10px;
+    color: black;
+    background-color: rgba(249, 248, 248, 0.5);
+    border: 2px solid black;
+    padding: auto 20px auto 20px;
+    width: 280px;
+    height: 50px;
+    inset: auto auto 20px 15px;
+    cursor: pointer;
+    margin-right: 10px;
+    align-items: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-size: 20px;
+}
+.clothesTab h2{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 10px;
+    font-weight: 300;
+    font-size: 40px;
+    padding: 15px 0 0 20px;
+}
+.clothesTab h3{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    letter-spacing: 5px;
+    font-size: 20px;
+    padding: 15px 0 0 50px;
+} */
+
+@media screen and (max-width: 992px) {
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+@media screen and (max-width: 700px){
+    .subjectTab{
+        width: 300px;
+        overflow: scroll;
+    }
+    .subjectTab::-webkit-scrollbar{
+        width: 0;
+    }
+    .subjectTab button{
+        width: 300px;
+        margin-top: 30px;
+    }
+    .listOfClothes{
+        width: 300px;
+    }
+    .listOfClothes a{
+        color: black;
+        text-decoration: none;
+        padding: 25px auto 25px auto;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .cartTab{
+        width: 400px;
+        background-color: black;
+        color: white;
+        position: fixed;
+        inset: 0 -400px 0 auto;
+        display: grid;
+        grid-template-rows: 70px 1fr 70px;
+        transition: 0.5s ease-in-out;
+        z-index: 3;
+    }
+    .listCart{
+        width: 400px;
+    }
+}

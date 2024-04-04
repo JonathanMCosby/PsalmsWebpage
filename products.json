@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Beige YHWH Hoodie",
+        "price": 125,
+        "image": "images/beigeYHWHHoodie.png"
+    },
+    {
+        "id": 2,
+        "name": "Black Saved By God Hoodie",
+        "price": 125,
+        "image": "images/blackSavedByHoodie.png"
+    },
+    {
+        "id": 3,
+        "name": "Black Saint Shorts",
+        "price": 45,
+        "image": "images/blackSaintShorts.png"
+    },
+    {
+        "id": 4,
+        "name": "Jesus Love You T-Shirt",
+        "price": 50,
+        "image": "images/jesusLovesYouTshirt.png"
+    },
+    {
+        "id": 5,
+        "name": "Brown God is With Us T-Shirt",
+        "price": 50,
+        "image": "images/brownGodIsWithUsTshirt.png"
+    },
+    {
+        "id": 6,
+        "name": "Black God is With Us T-Shirt",
+        "price": 50,
+        "image": "images/blackGodIsWithUsTshirt.png"
+    }
+]
