@@ -34,5 +34,17 @@
         "name": "Black God is With Us T-Shirt",
         "price": 50,
         "image": "images/blackGodIsWithUsTshirt.png"
+    },
+    {
+        "id": 7,
+        "name": "Black Faith Shorts",
+        "price": 75,
+        "image": "images/blackFaithShorts.png"
+    },
+    {
+        "id": 8,
+        "name": "Brown God Is With Us",
+        "price": 75,
+        "image": "images/brownGodlsWithUsTshirt.png"
     }
 ]
